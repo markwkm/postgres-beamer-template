@@ -1,0 +1,23 @@
+I recommend putting the files in the default templates search patch, which is a
+subdirectory of ~/texmf/tex.  It can be any named subdirectory.  For example,
+you can use git to clone it:
+
+    git clone https://github.com/markwkm/postgres-beamer-template.git ~/texmf/tex/postgres
+
+To use the template, just add:
+
+\usetheme{postgres}
+
+...
+
+\setbeamercolor{background canvas}{bg=pgbaseblue}
+
+\frame{\titlepage}
+
+% to start using a footer with slide numbers and title information
+\setbeamertemplate{footline}[postgres body]
+
+
+If you want 16:9 instead of the default 4:3 aspect ratio:
+
+\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.5]{beamerposter}
