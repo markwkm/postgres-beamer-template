@@ -1,0 +1,24 @@
+\documentclass{beamer}
+
+\usetheme{postgres}
+
+\title{Title}
+\author[Author in Footer]{Author}
+\institute[Institute in Footer]{Institute}
+\date{Date}
+
+\begin{document}
+
+\setbeamercolor{background canvas}{bg=pgbaseblue}
+\frame{\titlepage}
+
+\setbeamertemplate{footline}[postgres body]
+
+\frame
+{
+  \frametitle{This is the frame title}
+
+  The world's most advanced open source database.
+}
+
+\end{document}
