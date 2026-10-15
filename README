@@ -16,4 +16,4 @@ To use the template, just add:
 
 If you want 16:9 instead of the default 4:3 aspect ratio:
 
-\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.5]{beamerposter}
+\documentclass[aspectratio=169]{beamer}
