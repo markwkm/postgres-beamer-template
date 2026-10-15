@@ -1,8 +1,12 @@
-I recommend putting the files in the default templates search patch, which is a
-subdirectory of ~/texmf/tex.  It can be any named subdirectory.  For example,
-you can use git to clone it:
+I recommend putting the files in the default templates search path, which is a
+subdirectory of ~/texmf/tex/latex.  It can be any named subdirectory.  For
+example, you can use git to clone it:
 
-    git clone https://github.com/markwkm/postgres-beamer-template.git ~/texmf/tex/postgres
+    git clone https://github.com/markwkm/postgres-beamer-template.git ~/texmf/tex/latex/postgres
+
+If you are not sure where your personal texmf tree is, this prints it:
+
+    kpsewhich -var-value=TEXMFHOME
 
 To use the template, just add:
 
