@@ -12,10 +12,8 @@ To use the template, just add:
 
 \setbeamercolor{background canvas}{bg=pgbaseblue}
 
-\frame{\titlepage}
-
-% to start using a footer with slide numbers and title information
-\setbeamertemplate{footline}[postgres body]
+% the plain option omits the footer from the title page
+\frame[plain]{\titlepage}
 
 
 If you want 16:9 instead of the default 4:3 aspect ratio:
