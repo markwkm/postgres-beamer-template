@@ -1,9 +1,10 @@
 .PHONY: all clean
 
 TEX=$(wildcard *.tex)
+PDF=$(patsubst %.tex, %.pdf, $(TEX))
 STY=$(wildcard *.sty)
 
-all: $(patsubst %.tex, %.pdf, $(TEX))
+all: $(PDF)
 
 %.pdf: %.tex Makefile $(STY)
 	latex -output-format=pdf $<
@@ -11,4 +12,4 @@ all: $(patsubst %.tex, %.pdf, $(TEX))
 	-rm $*.aux $*.log $*.nav $*.out $*.snm $*.toc
 
 clean:
-	-rm *.pdf
+	-rm $(PDF)
