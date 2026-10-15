@@ -10,8 +10,6 @@ To use the template, just add:
 
 ...
 
-\setbeamercolor{background canvas}{bg=pgbaseblue}
-
 % the plain option omits the footer from the title page
 \frame[plain]{\titlepage}
 
