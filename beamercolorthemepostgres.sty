@@ -33,12 +33,14 @@
 \definecolor{pgbaseorange}{HTML}{d24b03}
 \definecolor{pglightorange}{HTML}{F26522}
 
-\setbeamercolor{item}{fg=pgbaseblue}
-\setbeamercolor{subitem}{fg=pgbaseblue}
-\setbeamercolor{subsubitem}{fg=pgbaseblue}
-\setbeamercolor{itemize item}{fg=white}
-\setbeamercolor{itemize subitem}{fg=white}
-\setbeamercolor{itemize subsubitem}{fg=white}
+% Alerted and example text colors.  They are not in the PostgreSQL palette.
+% Each has a contrast ratio of at least 4.5:1 against the base blue.
+\definecolor{pgalert}{HTML}{FFE082}
+\definecolor{pgexample}{HTML}{B9F6CA}
+
+\setbeamercolor{structure}{fg=white}
+\setbeamercolor{alerted text}{fg=pgalert}
+\setbeamercolor{example text}{fg=pgexample}
 \setbeamercolor{normal text}{fg=white,bg=pgbaseblue}
 \setbeamercolor{titlelike}{fg=white,bg=}
 
